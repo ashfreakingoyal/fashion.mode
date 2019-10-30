@@ -16,6 +16,10 @@
     <title>Document</title>
     <!------------style--------------------->
     <style>
+
+  html{
+    scroll-behavior: smooth;
+  }
         #borderimg1 { 
   border: 30px solid transparent;
   padding: 15px;
@@ -90,6 +94,7 @@
 }
     </style>
 
+
 </head>
 <body>
      <!----------------------------------------------------------nav-bar----------------------------------------------------------------->
@@ -102,13 +107,13 @@
                          
                         <ul class="navbar-nav ml-auto">
                               <li class="nav-item align ">
-                                <a href="img_scroll.html" class="nav-link center"  style="color: #1ea896">Home</a>
+                                <a href="myfashion.html" class="nav-link center"  style="color: #1ea896">Home</a>
                               </li>
                               <li class="nav-item align">
-                                  <a href="#" class="nav-link center text-white">About</a>
+                                  <a href="#aboutuss" class="nav-link center text-white">About</a>
                                 </li>
                                 <li class="nav-item align">
-                                    <a href="#" class="nav-link center text-white">Skills</a>
+                                    <a href="#contactuss" class="nav-link center text-white">Contact</a>
                                   </li>
                         </ul>
                       </div>
@@ -123,7 +128,7 @@
                   <h1 class="display-1 font-weight-bold" style="color: #4c5454;">Fashion Mode</h1>
                   <p class="lead"  style="color: #4c5454;">this is a very interesting website and u can make more out of it.</p>
                   <p class="lead"  style="color: #4c5454;">Get upto 30% Off<br>New Arrivals</p>
-                  <button type="button" id="but"><i class="fas fa-shopping-cart"></i>&nbsp;Shop Now</button>
+                  <a href="#shop"><button type="button" id="but"><i class="fas fa-shopping-cart"></i>&nbsp;Shop Now</button></a>
             </div>
 
             <div class="col-lg-5 col-sm-12 ">
@@ -134,7 +139,7 @@
         </div>
         </div>
 <!-------------------------------------------------------------------div-2--------------------------------------------------------------->
-             <div class="container-fluid" style="background-color: #4c5454;">
+             <div class="container-fluid" id="aboutuss" style="background-color: #4c5454;">
               <!--<h1 class="col-12" style="margin:auto;display:block;">About Us</h1>-->
               <h2 style="font-size:3vw;color: beige;text-align: center;">About Us</h2>
                     <hr class="hrsection">
@@ -166,7 +171,7 @@
 
 
     <!--------------------------------------------------ims-scroll---------------------------------------------------------------------------->
-  <div class="scroll" style="background-color:#1ea896">
+  <div class="scroll"  id="shop" style="background-color:#1ea896">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
              <div class="carousel-inner">
 
@@ -179,7 +184,7 @@
                     <!--<img class="cloth" src="ashwani.jpeg" alt="ash">-->
                     <div class="col-lg-3 col-md-6 col-sm-12 size">
                     <div class="card">
-                        <img src="ash.jpeg" class="card-img-top img-fluid">
+                        <img src="webimg/ash.jpeg" class="card-img-top img-fluid">
                        <div class="card-block">
                         
                          <h3 class="card-title text-center">Prize:  $10</h3>
@@ -196,7 +201,7 @@
                         I love to write and sing rap.I like solving data structures and algorithms .</p>-->
                   <div class="col-lg-3 col-md-6 col-sm-12 size">
                         <div class="card">
-                            <img src="ash11.jpeg" class="card-img-top img-fluid">
+                            <img src="webimg/ash11.jpeg" class="card-img-top img-fluid">
                            <div class="card-block">
                             
                              <h3 class="card-title text-center">Prize:  $10</h3>
@@ -213,7 +218,7 @@
 
                         <div class="col-lg-3 col-md-6 col-sm-12 size">
                             <div class="card">
-                                <img src="ash222.jpeg" class="card-img-top img-fluid">
+                                <img src="webimg/ash222.jpeg" class="card-img-top img-fluid">
                                <div class="card-block">
                                 
                                  <h3 class="card-title text-center">Prize:  $10</h3>
@@ -236,7 +241,9 @@
         </div>
   </div>  
   <!-------------------------------------------------------------footer------------------------------------------------------------> 
-  <div class="col-12" style="text-align: center;color: white;background-color: #4c5454;color:white;margin-bottom: 0%;"> 
+  <div class="col-12" id="contactuss" style="text-align: center;color: white;background-color: #4c5454;color:white;margin-bottom: 0%;">
+    <h2 style="font-size:3vw;color: beige;text-align: center;">Contact Us</h2>
+    <hr class="hrsection"> 
          <div><i class="fas fa-phone-alt"></i>&nbsp;+91 7827711958</div>
          <div><i class="fas fa-envelope"></i>&nbsp;ashwanigoyal99.ag@gmail.com</div>
             
@@ -269,5 +276,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--<script src="scroll.js"></script>
+    <script>
+      $(document).on('click','a[href="#"]',function(e){
+        var id=$(this).attr('href');
+    
+        var $id=$(id);
+        if($id.length===0){
+          return;
+        }
+        e.preventDefault();
+        var pos=$id.offset().top;
+        $('body,html').animate({scrollTop:pos,2000});
+      });
+      
+      
+      </script>-->
+    
   </body>
 </html>
