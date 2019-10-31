@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lp.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+      
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    <title>Login Form</title>
+    <!--<script type="text/javascript">
+        $(".input-div input").on("focus",function(){
+            $(this).addClass("focus");
+            });
+    
+       
+        </script>-->
+    
+    
+</head>
+<body>
+<!----------------------------------------------------------nav-bar----------------------------------------------------------------->
+<!--<div class="container-fluid">
+
+        <nav class="navbar navbar-expand-sm navbar-dark row " style="background-color: #4c5454;">
+                <a href="#" class="navbar-brand shift ">LOGO</a>
+                <button  data-toggle="collapse" data-target="#callbar" class="navbar-toggler"><span class="navbar-toggler-icon "></span></button>
+                <div id="callbar" class="collapse navbar-collapse">
+                 
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item align ">
+                        <a href="img_scroll.html" class="nav-link center text-white"  style="color: #1ea896">Home</a>
+                      </li>
+                      <li class="nav-item align">
+                          <a href="#aboutuss" class="nav-link center text-white">About</a>
+                        </li>
+                        <li class="nav-item align">
+                            <a href="#contactuss" class="nav-link center text-white">Contact</a>
+                          </li>
+                          <li class="nav-item align">
+                            <a href="lp.html" class="nav-link center">Login</a>
+                          </li>
+                </ul>
+              </div>
+              </nav>
+
+            </div>-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="containerr">
+                <div class="img">
+                        <img src="phon.png">
+                    </div>
+                    <div class="login-form">
+    <form action="lp.html">
+            <img class="avatar" src="avatar.jfif">
+        <h1>Welcome</h1>
+
+        <div class="txtb">
+                <div class="i">
+                <i class="fas fa-user"></i>  
+            </div>  
+            <input type="text">
+            
+            <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+                <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                <input type="password">
+                <span data-placeholder="Password"></span>
+            </div>
+            <a href="#">Forgot Password</a>
+                <input type="submit" class="btn" value="Login">
+               
+    </form>
+</div>
+    </div>
+    <script type="text/javascript">
+        $(".txtb input").on("focus",function(){
+            $(this).addClass("focus");
+            });
+
+            $(".txtb input").on("blur",function(){
+                if($(this).val() == "")
+            $(this).removeClass("focus");
+            });
+
+    
+       
+        </script>
+<!---------------------------------------------------------------------------------------------------------------------------------->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
